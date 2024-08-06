@@ -320,13 +320,6 @@ header, footer {
   padding-bottom: 5rem;
 }
 
-.img-thumbnail {
-  width: 200px; /* Adjust the width as needed */
-  height: 200px; /* Adjust the height as needed */
-  object-fit: cover; /* Ensure the image covers the dimensions without stretching */
-  border: 1px solid #ffffff; /* Adding border with color */
-}
-
 .rsvp {
   background-color: #ede1f8;
 }
