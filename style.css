@@ -425,37 +425,6 @@ footer li {
   line-height: 0;
 }
 
-@keyframes rotating {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .news-detail-title {
-    font-size: 36px;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  h1 {
-    font-size: 32px;
-  }
-
-  .heroText p {
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 359px) {
-  .news-detail-title {
-    font-size: 22px;
-  }
-}
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -553,4 +522,112 @@ footer li {
 
 .home .couple .col-lg-6:nth-child(2) .text-start {
   animation-delay: 1s;
+}
+
+/* Media Query */
+/* Extra large */
+@media (max-width: 1200px) {
+  .home .heart {
+    transform: translateX(-50%) translateY(45px);
+  }
+}
+
+/* laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 70px;
+  }
+
+  .home .heart {
+    display: none;
+  }
+
+  .timeline::before {
+    left: 60px;
+  }
+
+  .timeline li .timeline-image {
+    left: 15px;
+    margin-left: 45px;
+    top: 16px;
+  }
+
+  .timeline li .timeline-panel {
+    width: calc((100% - 200px));
+    float: right;
+  }
+
+  .timeline li .timeline-panel::before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+
+  .timeline li .timeline-panel::after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -13px;
+    right: auto;
+  }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 60px;
+    margin: 5px;
+  }
+
+  .mynavbar .nav-link {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .sticky-top {
+    overflow: hidden;
+  }
+
+  .timeline li .timeline-image {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+/* mobile phone */
+@media (max-width: 576px) {
+  html {
+    font-size: 60%;
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 45px;
+    margin: 3px;
+  }
+
+  .timeline li .timeline-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .timeline li .timeline-panel {
+    width: 65%;
+    transform: translateX(-20px);
+  }
+
+  .timeline li .timeline-panel::before {
+    top: 30px;
+  }
+
+  .timeline li .timeline-panel::after {
+    top: 31px;
+  }
 }
